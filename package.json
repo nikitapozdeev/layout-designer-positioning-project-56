@@ -1,0 +1,32 @@
+{
+  "name": "layout-designer-positioning-project-56",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/nikitapozdeev/layout-designer-positioning-project-56/workflows/hexlet-check/badge.svg)](https://github.com/nikitapozdeev/layout-designer-positioning-project-56/actions)",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "sass": "^1.54.9",
+    "stylelint-config-standard": "^28.0.0",
+    "surge": "^0.23.1"
+  },
+  "scripts": {
+    "deploy": "npm run sass && surge ./src music-box-nikitapozdeev.surge.sh",
+    "sass": "sass src/scss/app.scss src/css/style.css",
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "npx htmlhint src/*.html",
+    "lint:css": "npx stylelint src/scss/*.scss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitapozdeev/layout-designer-positioning-project-56.git"
+  },
+  "keywords": [],
+  "author": "Nikita Pozdeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikitapozdeev/layout-designer-positioning-project-56/issues"
+  },
+  "homepage": "https://github.com/nikitapozdeev/layout-designer-positioning-project-56#readme"
+}
